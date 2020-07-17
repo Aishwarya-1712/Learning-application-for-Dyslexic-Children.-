@@ -1,0 +1,1 @@
+# Learning-application-for-Dyslexic-Children.-
