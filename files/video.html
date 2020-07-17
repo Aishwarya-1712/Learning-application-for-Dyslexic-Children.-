@@ -1,0 +1,136 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="abcd.css">
+    <link rel="stylesheet" href="bubbles.css">
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.button{
+background-color: red;
+border:none;
+color: white;
+padding: 10px 15px 10px 15px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:20px;
+margin: 2x 2px;
+cursor:pointer;
+border-radius: 12px;
+}
+</style>
+<body>
+<ul>
+  <li><a class="active" href="firstfirstpage.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+<div class="text"></div>
+<!-- SVG GOOEY FILTER-->
+<svg>
+  <filter id="gooey">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"></feGaussianBlur>
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -8" result="gooey"></feColorMatrix>
+    <feComposite in="SourceGraphic" in2="gooey" operator="atop"></feComposite>
+  </filter>
+</svg>
+    <div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>ALPHABETS</h1>
+</div>
+
+</div>
+</div>
+<img src="a.jpg" style="width:15%">
+
+<a href="https://www.youtube.com/watch?v=75p-N9YKqNo"><br><br>
+<button class="button">ABC</button></a><br><br>
+<a href="https://www.youtube.com/watch?v=y9ifzj87WCw">
+<button class="button">ABC2</button></a><br><br>
+
+<a href="https://www.youtube.com/watch?v=pCc33-UOJoM"><button class="button">ABC3</button><br><br>
+<div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>RHYMES</h1>
+</div>
+
+</div>
+</div>
+<img src="r.jpg" style="width:15%;">
+<br><br>
+<a href="https://www.youtube.com/watch?v=7GjOOyBoELw"><button class="button">Johny</button></a><br><br>
+</a>
+<a href="https://www.youtube.com/watch?v=NBuA6YIQHCs"> <button class="button">Rain go away</button></a><br><br>
+</a>
+<a href="https://www.youtube.com/watch?v=yCjJyiqpAuU"><button class="button">Twinkle</button></a>
+<div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>COLORS</h1>
+</div>
+
+</div>
+</div>
+<img src="paint.jpg" style="width:15%"><br><br>
+<a href="https://www.youtube.com/watch?v=75p-N9YKqNo"><button class="button">Colours 1</button><br><br>
+<a href="https://www.youtube.com/watch?v=y9ifzj87WCw"><button class="button">Colours 2</button></a><br><br>
+<a href="https://www.youtube.com/watch?v=pCc33-UOJoM"><button class="button">Colours 3</button></a><br><br>
+
+<div class="center-outer">
+<div class="center-inner">
+
+<div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>STORIES</h1>
+</div>
+
+</div>
+</div>
+<img src="s.jpg" style="width:50%">
+<a href="https://www.youtube.com/watch?v=75p-N9YKqNo"><br><br>
+<button class="button">Moral stories1</button></a><br><br>
+
+<a href="https://www.youtube.com/watch?v=y9ifzj87WCw"><button class="button">Moral stories2</button></a><br><br>
+
+<a href="https://www.youtube.com/watch?v=pCc33-UOJoM"><button class="button">Moral stories3</button></a><br><br>
+
+<div class="center-outer">
+<div class="center-inner">
+
+    <script src="page.js"></script>
+</body>
+    
+</html>

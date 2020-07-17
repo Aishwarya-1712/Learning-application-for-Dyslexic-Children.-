@@ -1,0 +1,59 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="sty.css">
+<style>
+body{
+background-image: url("act.jpg");
+background-size: cover;
+}
+.button{
+background-color: slateblue;
+border:none;
+color: white;
+padding: 10px 15px 10px 15px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:20px;
+margin: 2x 2px;
+cursor:pointer;
+border-radius: 12px;
+}
+
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="firstfirstpage.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contact.html">Contact</a></li>
+ 
+</ul>
+<br>
+<br>
+<br>
+<form name="abc" onsubmit="return validation();" method="post" align="center">
+ <h1>ADD ACTIVITY</h1> 
+<b>Activity name: <br>
+ <input type="text" name="name" required ><br><br><br>
+ Activity description: <br> 
+ <input type="text" name="name" required ><br><br><br>
+ Minimum points: <br>
+ <input type="number" name="location" required><br><br><br>
+ Allowed no of attempts: <br>
+ <input type="number" name="phone" required></b><br><br>
+  </form>
+  <form name="abc" onsubmit="return answer();" method="post" align="center">
+<input type="submit" class="button">
+<script>
+function answer(){
+alert("Your submission has been recorded")
+}
+</script>
+
+</body>
+</html>

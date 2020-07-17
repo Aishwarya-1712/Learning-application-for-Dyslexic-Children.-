@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="sty.css">
+
+<title>java</title>
+</head>
+<body>
+<form name="abc" onsubmit="return validation();" method="post">
+Name:<br>
+<input type="text" name="name"><br><br>
+age:<br>
+<input type="text" name="age"><br><br>
+Email:<br>
+<input type="text" name="email" required><br><br>
+phone number:<br>
+<input type="text" name="phone"><br><br>
+<input type="submit" name="submit">
+</form>
+</body>
+<script>
+function validation()
+{
+var name=document.abc.name;
+var age=document.abc.age;
+var phoneno=document.abc.phone;
+var letters = /^[A-Za-z]+$/;
+var number=/^[0-9]+$/;
+if(name.value.match(letters))
+{}
+else{
+alert("Enter alphabet in the name field");
+}
+if(age.value.match(number))
+{}
+else
+{
+alert("Enter number in the age field");
+}
+if(phoneno.value.match(number))
+{
+alert("Your form has been validated");
+}
+else
+{
+alert("Enter numbers in the phone number field");
+}
+}
+</script>
+</html>
